@@ -6,7 +6,7 @@ CardViewApp is a sleek and intuitive application designed to help you organize a
 
 ## Screenshots
 
-![App Screenshot](https://sendeyo.com/en/81eb921dc3)
+![App Screenshot](file:///C:/Users/venka/Downloads/photo_2023-05-19_17-38-48.jpg.html)
 
 
 
