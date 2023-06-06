@@ -7,6 +7,7 @@ CardViewApp is a sleek and intuitive application designed to help you organize a
 ## Screenshots
 
 ![App Screenshot]([photo-2023-05-19-17-38-48.jpg](https://postimg.cc/QFfN0jyL))
+[![photo-2023-05-19-17-38-48.jpg](https://i.postimg.cc/N0cyGM80/photo-2023-05-19-17-38-48.jpg)](https://postimg.cc/QFfN0jyL)
 
 
 
