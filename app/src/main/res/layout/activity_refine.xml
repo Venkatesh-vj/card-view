@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/topNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+    <!-- Select your availability with drop-down list box -->
+    <TextView
+        android:id="@+id/textAvailability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#273842"
+        android:text="Select Your Availability"
+        android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/FramLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/frame_background">
+        <Spinner
+            android:id="@+id/spinnerAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:entries="@array/availability_options"
+             />
+        </FrameLayout>
+
+    <!-- Add your status with EditText box -->
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#273842"
+        android:text="Add Your Status"
+        android:textStyle="bold" />
+
+
+    <FrameLayout
+        android:id="@+id/FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/frame_background">
+
+        <EditText
+            android:id="@+id/editStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@android:color/transparent"
+            android:text="@string/Status"
+            android:textColor="#273842"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+        <TextView
+            android:id="@+id/textCharacterCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#273842"
+            android:textSize="12sp"
+            android:text="47/250"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="240dp" />
+
+    <TextView
+        android:id="@+id/textHyperlocalDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#273842"
+        android:textStyle="bold"
+        android:text="Select Hyper local Distance" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewProgress"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:padding="5dp"-->
+<!--            android:background="@drawable/seekbar_background"-->
+<!--            android:text="0"-->
+<!--            android:textSize="16sp" />-->
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/seekBarDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:max="100" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="1 Km" />
+
+            <TextView
+                android:id="@+id/textViewEnd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="100 km" />
+
+        </LinearLayout>
+
+        <!-- Select purpose with 8 selectable options -->
+    <TextView
+        android:id="@+id/textPurpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#273842"
+        android:layout_marginTop="25dp"
+        android:text="Select Purpose"
+        android:textStyle="bold" />
+
+        <com.nex3z.flowlayout.FlowLayout
+            android:id="@+id/flowLayoutOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+           />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="170dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/frame_background"
+            android:text="@string/save_amp_explore" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</RelativeLayout>

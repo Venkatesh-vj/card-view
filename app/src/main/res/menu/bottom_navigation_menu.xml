@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_item1"
+        android:icon="@drawable/checklist"
+        android:iconTint="@color/white"
+        android:title="Refine" />
+    <item
+        android:id="@+id/navigation_item2"
+        android:icon="@drawable/eye"
+        android:iconTint="@color/white"
+        android:title="Explore" />
+    <item
+        android:id="@+id/navigation_item3"
+        android:icon="@drawable/connection"
+        android:iconTint="@color/white"
+        android:title="Network" />
+    <item
+        android:id="@+id/navigation_item4"
+        android:iconTint="@color/white"
+        android:icon="@drawable/chat"
+        android:title="Chat" />
+    <item
+        android:id="@+id/navigation_item5"
+        android:iconTint="@color/white"
+        android:icon="@drawable/contact"
+        android:title="Contacts" />
+</menu>

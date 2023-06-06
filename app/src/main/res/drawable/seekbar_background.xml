@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Square box shape -->
+    <item>
+        <shape>
+            <solid android:color="#273842" /> <!-- Set the desired background color -->
+            <size android:width="12dp" android:height="12dp" /> <!-- Set the desired width and height of the square box -->
+            <corners android:radius="4dp" /> <!-- Set the desired corner radius for rounded corners -->
+        </shape>
+    </item>
+    <!-- Downward arrow shape -->
+    <item android:top="12dp">
+        <shape>
+            <solid android:color="#273842" /> <!-- Set the desired background color for the arrow -->
+            <size android:width="12dp" android:height="6dp" /> <!-- Set the desired width and height of the arrow -->
+            <corners android:radius="2dp" /> <!-- Set the desired corner radius for the arrow -->
+        </shape>
+    </item>
+</layer-list>
